@@ -15,7 +15,13 @@
 
     player.play_audio('applause.flac')
 
-## Install
+## Easy Install with pip:
+> Run:
+>
+    sudo pip3 install pymplay
+>
+
+## Manual Install
 > First run:
 >
     sudo python3 setup.py sdist

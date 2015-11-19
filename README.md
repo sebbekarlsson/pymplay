@@ -16,6 +16,10 @@
     player.play_audio('applause.flac')
 
 ## Install
+> First run:
+>
+    sudo python3 setup.py sdist
+>
 > If you are on Arch Linux run:
 >
     sudo bash install_arch.sh

@@ -13,11 +13,8 @@ class MusicPlayer(object):
         if not os.path.isfile(filename):
             raise Exception('NoSuchFile')
 
-        shell = Popen(['play', filename], stdin=PIPE, stdout=PIPE, stderr=PIPE)
-        output = shell.returncode
-        time.sleep(3)
-        while output is not None:
-            pass
+        with Popen(['play', filename], stdin=PIPE, stdout=PIPE, stderr=PIPE) as shell:
+                shell.wait()
 
         return True
 
